@@ -1,4 +1,12 @@
-﻿.form-control{
+﻿label{
+    color: ghostwhite;
+}
+
+h2{
+    color: ghostwhite;
+}
+
+.form-control{
     width: 500px;
     margin: auto;
 }
@@ -19,6 +27,8 @@
     background-color: #BF3F3F;
     border-radius: 5px;
     display: inline-block;
+    color: ghostwhite;
+    padding: 5px;
 }
 
 nav.navbar{
@@ -53,3 +63,11 @@ li.link{
     height: 250px;
     background-color:#BF3F3F; 
 }
+
+.crud{
+    border-radius: 5px;
+    background-color:#BF3F3F;
+    display: inline-block;
+    padding: 10px;
+}
+

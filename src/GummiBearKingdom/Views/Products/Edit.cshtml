@@ -5,19 +5,25 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Edit this product</h2>
 
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.ProductId)
+<div class="crud">
+    <h2>Edit this product</h2>
 
-    <label>Name</label>
-    @Html.EditorFor(model => model.Name)
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.ProductId)
 
-    <label>Origin</label>
-    @Html.EditorFor(model => model.Origin)
+        <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" @Html.EditorFor(model => model.Name)
+        </div>
 
-    <input type="submit" value="Edit Product" />
-}
+        <div class="form-group">
+            <label>Origin</label>
+           <input class="form-control" @Html.EditorFor(model => model.Origin)
+        </div>
 
-<p>@Html.ActionLink("Back to Product page", "Index")</p>
+        <input type="submit" value="Edit Product" class="btn" />
+    }
+</div>
+
