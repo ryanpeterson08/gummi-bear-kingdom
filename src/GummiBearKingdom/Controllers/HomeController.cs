@@ -9,12 +9,11 @@ using GummiBearKingdom.Models;
 
 
 
-
 namespace GummiBearKingdom.Controllers
 {
     public class HomeController : Controller
     {
-        private GummiBearDBContext db = new GummiBearDBContext();
+        private GummiBearKingdomDBContext db = new GummiBearKingdomDBContext();
         public IActionResult Index()
         {
             return View();

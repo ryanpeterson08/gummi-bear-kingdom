@@ -7,7 +7,7 @@ using GummiBearKingdom.Models;
 
 namespace GummiBearKingdom.Migrations
 {
-    [DbContext(typeof(GummiBearDBContext))]
+    [DbContext(typeof(GummiBearKingdomDBContext))]
     [Migration("20170210171007_Initial")]
     partial class Initial
     {

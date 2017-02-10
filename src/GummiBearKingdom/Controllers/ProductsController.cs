@@ -8,17 +8,22 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using GummiBearKingdom.Models;
 
 
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace GummiBearKingdom.Controllers
 {
-    private GummiBearDBContext db = new GummiBearDBContext();
+    
     public class ProductsController : Controller
     {
-        // GET: /<controller>/
+        private GummiBearKingdomDBContext db = new GummiBearKingdomDBContext();
         public IActionResult Index()
         {
-            return View();
+            return View(db.Products.ToList());
+        }
+
+        public IActionResult Details(int id)
+        {
+            var thisProduct = db.Products.FirstOrDefault(products => products.ProductId == id);
+            return View(thisProduct);
         }
     }
 }

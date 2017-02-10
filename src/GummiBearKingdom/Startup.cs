@@ -29,7 +29,7 @@ namespace GummiBearKingdom
             services.AddMvc();
 
             services.AddEntityFramework()
-                .AddDbContext<GummiBearDBContext>(options =>
+                .AddDbContext<GummiBearKingdomDBContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
         }
 

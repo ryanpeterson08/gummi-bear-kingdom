@@ -7,7 +7,7 @@ using GummiBearKingdom.Models;
 
 namespace GummiBearKingdom.Migrations
 {
-    [DbContext(typeof(GummiBearDBContext))]
+    [DbContext(typeof(GummiBearKingdomDBContext))]
     partial class GummiBearDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

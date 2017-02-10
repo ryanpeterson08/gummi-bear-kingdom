@@ -1,0 +1,15 @@
+﻿@model IEnumerable<GummiBearKingdom.Models.Product>
+
+@{
+    ViewData["Title"] = "Gummi Bear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Here are our Products!</h2>
+
+@foreach (var product in Model)
+{
+    <h3>@Html.DisplayFor(productItem => product.Name) | @Html.ActionLink("Product Details", "Details", new { id = product.ProductId })</h3>
+
+}
+
