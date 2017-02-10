@@ -8,13 +8,17 @@
 <h2>Create a New Product</h2>
 @using (Html.BeginForm())
 {
-    <label>Name</label>
-    @Html.EditorFor(model => model.Name)
+    <div class="form-group">
+        <label>Name</label>
+       <input class="form-control" @Html.EditorFor(model => model.Name)
+    </div>
 
-    <label>Origin</label>
-    @Html.EditorFor(model => model.Origin)
+    <div>
+        <label>Origin</label>
+        <input class="form-control" @Html.EditorFor(model => model.Origin)
+    </div>
 
-    <input type="submit" value="Add new Product" />
+    <input type="submit" value="Add new Product" class="btn btn-info" />
 }
 
 <p>@Html.ActionLink("Back to Product page", "Index")</p>
