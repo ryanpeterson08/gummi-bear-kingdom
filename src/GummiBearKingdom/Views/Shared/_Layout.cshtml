@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="~/css/Styles.css" />
     <title>@ViewBag.Title</title>
 </head>
@@ -17,10 +18,20 @@
             <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
             <li>@Html.ActionLink("Products", "Index", "Products")</li>
         </ul>
+        <ul id="right">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+        </ul>
     </div>
     </nav>
     <div class="container-fluid text-center">
         @RenderBody()
     </div>
+    <footer>
+        <div>
+            <p id="footer-text">Powered By:</p>
+            <i class="fa fa-windows" aria-hidden="true"></i>
+        </div>
+    </footer>
 </body>
 </html>

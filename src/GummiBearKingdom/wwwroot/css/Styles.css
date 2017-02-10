@@ -58,7 +58,7 @@ li.link{
 }
 
 .product-listing{
-    display: inline-block;
+    
     border-radius: 5px;
     height: 100px;
     background-color:#BF3F3F; 
@@ -70,4 +70,31 @@ li.link{
     display: inline-block;
     padding: 10px;
 }
+
+footer div{
+    width: 95%;
+    background-color: rgb(44,45,48);
+    
+    border-radius: 5px;
+    margin-top: 100px;
+    margin: auto;  
+}
+
+i{
+    color: ghostwhite;
+    display: block;
+    margin: 5px;
+}
+
+#right{
+    float: right
+}
+
+#footer-text{
+    font-size: 10px;
+    display: inline;
+    color: ghostwhite;
+    margin-left: 5px;
+}
+
 
