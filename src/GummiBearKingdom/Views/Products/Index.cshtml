@@ -9,7 +9,7 @@
 
 @foreach (var product in Model)
 {
-    <h3>@Html.DisplayFor(productItem => product.Name) | @Html.ActionLink("Product Details", "Details", new { id = product.ProductId })</h3>
+    <h3>@Html.DisplayFor(productItem => product.Name) | @Html.ActionLink("Product Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit Product", "Edit", new {id = product.ProductId })</h3>
 
 
 }

@@ -1,0 +1,23 @@
+﻿@model GummiBearKingdom.Models.Product
+
+@{
+    ViewData["Title"] = "Product Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit this product</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ProductId)
+
+    <label>Name</label>
+    @Html.EditorFor(model => model.Name)
+
+    <label>Origin</label>
+    @Html.EditorFor(model => model.Origin)
+
+    <input type="submit" value="Edit Product" />
+}
+
+<p>@Html.ActionLink("Back to Product page", "Index")</p>
