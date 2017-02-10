@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Here are our Products!</h2>
+<h1>Here are our Products!</h1>
 
 @foreach (var product in Model)
 {
@@ -16,5 +16,5 @@
 
 
 }
-<h4>@Html.ActionLink("Add new Product", "Create")</h4>
+<h4 class="link">@Html.ActionLink("Add new Product", "Create")</h4>
 
