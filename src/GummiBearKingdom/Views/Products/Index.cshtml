@@ -11,7 +11,7 @@
 {
     <div class="product-listing"><h2>@Html.DisplayFor(productItem => product.Name)</h2>
     
-        <li>@Html.ActionLink("Product Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit Product", "Edit", new {id = product.ProductId }) | @Html.ActionLink("Delete Product", "Delete", new { id = product.ProductId})</li>
+        <li class="link">@Html.ActionLink("Product Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit Product", "Edit", new {id = product.ProductId }) | @Html.ActionLink("Delete Product", "Delete", new { id = product.ProductId})</li>
     </div>
 
 

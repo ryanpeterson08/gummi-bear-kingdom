@@ -6,3 +6,50 @@
 .btn{
     margin-top: 15px;
 }
+
+#banner{
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    position: relative;
+    background-image: url("../img/banner.jpg");
+    height: 500px;
+}
+
+#title{
+    background-color: #BF3F3F;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav.navbar{
+    background-color:#BF3F3F;
+   
+}
+
+a.navbar-brand{
+    color: ghostwhite;
+}
+
+
+a{
+    color: ghostwhite;
+}
+
+.link{
+    background-color: #BF3F3F;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+}
+
+li.link{
+    font-size: 14px;
+    
+}
+
+.product-listing{
+    display: inline-block;
+    border-radius: 5px;
+    height: 250px;
+    background-color:#BF3F3F; 
+}
